@@ -1,0 +1,6 @@
+{
+  "name": "fileblend",
+  "type": "module",
+  "version": "0.0.0-dev",
+  "exports": "./index.ts"
+}
