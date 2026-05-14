@@ -63,12 +63,10 @@ compile/
 dist/
 .astro/
 /docs/content/docs/reference/
-.cursor/
-.claude/
 .serena/
-.mcp.json
 .env
 .env.local
 messages.js
 .user/
 tmuxp.yaml
+.claude/settings.local.json
