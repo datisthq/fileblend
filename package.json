@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "bump": "ncu -ws -u",
-    "clean": "rm -rf **/node_modules",
     "coverage": "sensible-browser coverage/index.html",
     "format": "vp fmt",
     "lint": "vp fmt --check && vp lint",
