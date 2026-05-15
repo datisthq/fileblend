@@ -16,7 +16,10 @@
     "test": "pnpm lint && pnpm type && pnpm unit",
     "test:win": "pnpm unit",
     "type": "tsc --noEmit && pnpm -F website type",
-    "version:ci": "pnpm --include-workspace-root -r exec pnpm version --no-git-tag-version"
+    "version:ci": "pnpm --include-workspace-root -r exec pnpm version --no-git-tag-version",
+    "leaks": "gitleaks git --config=.gitleaks.toml --verbose --redact",
+    "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --exclude=\"**/fixtures/**\" --metrics=off",
+    "scan": "pnpm leaks && pnpm vulns"
   },
   "devDependencies": {
     "@semantic-release/exec": "7.1.0",
