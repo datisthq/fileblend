@@ -15,6 +15,7 @@ Thank you for your interest in contributing to fileblend! This document provides
 ### Setup
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/yourusername/fileblend.git fileblend
    cd fileblend
@@ -24,6 +25,7 @@ Thank you for your interest in contributing to fileblend! This document provides
    ```bash
    pnpm install
    ```
+
 ## Development Workflow
 
 ### Code Style and Quality
@@ -31,16 +33,19 @@ Thank you for your interest in contributing to fileblend! This document provides
 We use Biome for linting and formatting, and TypeScript for type checking:
 
 - **Lint**: Check for code issues
+
   ```bash
   pnpm run lint
   ```
 
 - **Format**: Auto-fix formatting issues
+
   ```bash
   pnpm run format
   ```
 
 - **Type Check**: Verify TypeScript types
+
   ```bash
   pnpm run type
   ```
@@ -55,11 +60,13 @@ We use Biome for linting and formatting, and TypeScript for type checking:
 Tests are located in `__spec__` directories and use Vitest:
 
 - **Run All Tests**: (includes linting and type checking)
+
   ```bash
   pnpm test
   ```
 
 - **Run Tests Only**: (without linting/type checking)
+
   ```bash
   pnpm run spec
   ```
@@ -76,6 +83,7 @@ Update all dependencies to their latest versions:
 ```bash
 pnpm run bump
 ```
+
 ## Code Style Guidelines
 
 - Use TypeScript with strict type checking
